@@ -1,0 +1,17 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  height: 100px;
+}
+
+.home,
+.question {
+  width: 20px;
+}
+
+.img-git {
+  width: 70px;
+  height: 70px;
+}
