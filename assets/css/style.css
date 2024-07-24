@@ -2,16 +2,59 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-header {
-  height: 100px;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.home,
-.question {
-  width: 20px;
+.title {
+  font-weight: 600;
 }
 
-.img-git {
-  width: 70px;
-  height: 70px;
+.bi-facebook {
+  color: #3b5998;
+  font-size: 35px;
+}
+.bi-twitter-x {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+}
+.bi-google {
+  background-color: #db4a39;
+  color: white;
+  font-size: 30px;
+}
+.bi-linkedin {
+  color: #0072b1;
+  font-size: 30px;
+}
+
+.bi-instagram {
+  color: white;
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 30px;
+}
+
+.bi-tiktok {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+}
+
+footer {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
