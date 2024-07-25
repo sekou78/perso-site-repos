@@ -7,8 +7,22 @@ a {
   color: inherit;
 }
 
+img {
+  width: 20px;
+}
+
 .title {
   font-weight: 600;
+}
+
+.bi-person {
+  color: black;
+  font-size: 15px;
+}
+
+.bi-r-circle {
+  color: black;
+  font-size: 15px;
 }
 
 .bi-facebook {

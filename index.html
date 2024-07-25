@@ -6,15 +6,15 @@
     <link
       rel="stylesheet"
       href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css" />
     <title>Mon Github</title>
   </head>
   <body>
@@ -44,57 +44,52 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/">
                   <button type="button" class="btn btn-outline-primary">
-                    <img
-                      src="/assets/icons/home.svg"
-                      alt="Page d'accueil"
-                      style="width: 20px" />
+                    <img src="/assets/icons/home.svg" alt="Page d'accueil" />
                     Home
                   </button>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pages/repositories.html"
+                <a class="nav-link" href="/repositories"
                   ><button type="button" class="btn btn-outline-primary">
                     <img
                       src="/assets/icons/repository.svg"
-                      alt="Repositories"
-                      style="width: 20px" />
+                      alt="Repositories" />
                     Repositories
                   </button></a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pages/auth/compte.html"
-                  ><button type="button" class="btn btn-outline-primary">
-                    <img
-                      src="/assets/icons/profile.svg"
-                      alt="Compte"
-                      style="width: 20px" />
+                <a class="nav-link" href="/compte">
+                  <button type="button" class="btn btn-outline-primary">
+                    <i class="bi bi-person rounded-2"></i>
                     Compte
                   </button></a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pages/auth/connexion.html"
+                <a class="nav-link" href="/inscription"
                   ><button type="button" class="btn btn-outline-primary">
-                    <img
-                      src="/assets/icons/connexion.svg"
-                      alt="Compte"
-                      style="width: 20px" />
+                    <i class="bi bi-r-circle"></i>
+                    Inscription
+                  </button></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/connexion">
+                  <button type="button" class="btn btn-outline-primary">
+                    <img src="/assets/icons/connexion.svg" alt="Compte" />
                     Connexion
                   </button></a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/"
-                  ><button type="button" class="btn btn-outline-primary">
-                    <img
-                      src="/assets/icons/deconnexion.svg"
-                      alt="Compte"
-                      style="width: 20px" />
+                <a class="nav-link" href="/">
+                  <button type="button" class="btn btn-outline-primary">
+                    <img src="/assets/icons/deconnexion.svg" alt="Compte" />
                     Déconnexion
-                  </button></a
-                >
+                  </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -144,7 +139,8 @@
       </div>
     </footer>
 
-    <script src="/js/app.js"></script>
+    <script src="./js/app.js" type="module"></script>
+    <script type="module" src="./Router/router.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
