@@ -41,6 +41,10 @@
                   class="form-control text-center"
                   id="InputEmail"
                   placeholder="email@email.com" />
+                <div class="invalid-feedback">
+                  Le mail n'est pas au bon format
+                </div>
+                <div class="valid-feedback">Le format du mail est correct</div>
               </div>
               <div class="mb-3">
                 <label for="InputPassword" class="form-label p-2"
@@ -51,10 +55,18 @@
                   class="form-control text-center"
                   id="InputPassword"
                   placeholder="********" />
+                <div class="invalid-feedback">
+                  Le mot de passe n'est assez robuste : 8 caractères, comprenant
+                  au moins 1 lettre majuscule, 1 chiffre et 1 symbole
+                </div>
+                <div class="valid-feedback">Le mot de passe est robuste</div>
               </div>
               <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="Check1" />
-                <label class="form-check-label" for="Check1"
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="checkSignin" />
+                <label class="form-check-label" for="checkSignin"
                   >Afficher le mot de passe</label
                 >
               </div>
@@ -62,7 +74,9 @@
           </div>
         </div>
         <div class="modal-footer col justify-content-center">
-          <button type="button" class="btn btn-primary">Connexion</button>
+          <button type="button" class="btn btn-primary" id="btn-signin">
+            Connexion
+          </button>
         </div>
       </div>
     </div>
