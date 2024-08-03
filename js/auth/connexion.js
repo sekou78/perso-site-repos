@@ -77,3 +77,25 @@ function showPassword() {
     inputPasswordSignin.type = "password";
   }
 }
+
+//Mise en place de connexion avec des infos testes en local
+inputBtnSignin.addEventListener("click", checkCredentials);
+
+function checkCredentials() {
+  //Ici mise en place de la verification en BDD
+  if (
+    inputEmailSignin.value == "test@test.fr" &&
+    inputPasswordSignin.value == "Azerty$1"
+  ) {
+    //Ici recuperation du vrai token
+    const token = "jesuisletokendeconnexionpourletestedelaconnexion";
+    setToken(token);
+
+    //placer ce token en cookie
+
+    window.location.replace("/compte");
+  } else {
+    inputEmailSignin.classList.add("is-invalid");
+    inputPasswordSignin.classList.add("is-invalid");
+  }
+}
