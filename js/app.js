@@ -1,4 +1,7 @@
 const tokenCookieName = "accessToken";
+const sigoutBtn = document.getElementById("sigout-Btn");
+
+sigoutBtn.addEventListener("click", signout);
 
 function setToken(token) {
   setCookie(tokenCookieName, token, 1);
@@ -49,4 +52,10 @@ if (isConnected()) {
   alert("Je suis dans la place");
 } else {
   alert("Vous êtes OUT de la place");
+}
+
+//fonction de deconnexion
+function signout() {
+  eraseCookie(tokenCookieName);
+  window.location.reload("/");
 }
