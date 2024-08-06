@@ -85,16 +85,16 @@ function showAndHideElementsForRoles() {
           element.classList.add("d-none");
         }
         break;
-      case "admin":
-        if (!userConnected || role != "admin") {
-          element.classList.add("d-none");
-        }
-        break;
-      case "client":
-        if (!userConnected || role != "client") {
-          element.classList.add("d-none");
-        }
-        break;
+      // case "admin":
+      //   if (!userConnected || role != "admin") {
+      //     element.classList.add("d-none");
+      //   }
+      //   break;
+      // case "client":
+      //   if (!userConnected || role != "client") {
+      //     element.classList.add("d-none");
+      //   }
+      //   break;
     }
   });
 }

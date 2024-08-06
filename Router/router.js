@@ -2,7 +2,7 @@ import Route from "./Route.js";
 import { allRoutes, websiteName } from "./allRoutes.js";
 
 // Création d'une route pour la page 404 (page introuvable)
-const route404 = new Route("404", "Page introuvable", "../pages/404.html");
+const route404 = new Route("404", "Page introuvable", "../pages/404.html", []);
 
 // Fonction pour récupérer la route correspondant à une URL donnée
 const getRouteByUrl = (url) => {
@@ -29,6 +29,21 @@ const LoadContentPage = async () => {
 
   // Récupération de l'URL actuelle
   const actualRoute = getRouteByUrl(path);
+
+  //Vérification des droits d'accès
+  const allDroitsArray = actualRoute.authorize;
+  if (allDroitsArray.length > 0) {
+    if (allDroitsArray.includes("disconnected")) {
+      if (isConnected()) {
+        window.location.replace("/");
+      }
+    } else {
+      const droitUser = getRole();
+      if (!allDroitsArray.includes(droitUser)) {
+        window.location.replace("/404");
+      }
+    }
+  }
 
   // Récupération du contenu HTML de la route
   const html = await fetch(actualRoute.pathHtml).then((data) => data.text());

@@ -94,7 +94,7 @@ function checkCredentials() {
     //placer ce token en cookie
 
     // setCookie(RoleCookieName, "admin", 7);
-    setCookie(RoleCookieName, "client", 7);
+    setCookie(RoleCookieName, "connected", 7);
     window.location.replace("/compte");
   } else {
     inputEmailSignin.classList.add("is-invalid");
