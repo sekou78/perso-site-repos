@@ -9,6 +9,6 @@ export default class Route {
 }
 
 /*
-[] -> Tout le monde peut y accéder
-["admin"] -> Réserver aux utilisateurs connecté
+["disconnected"] -> Tout le monde peut y accéder
+["connected"] -> Réserver aux utilisateurs connecté
 */
